@@ -1,0 +1,159 @@
+/* Ruleset for Navigation bar at top of site */
+nav {
+    padding: 5px;
+    background-color: blueviolet;
+}
+
+/* Ruleset targeting each link in the navigation bar */
+.Button {
+    display: inline-block;
+    width: 250px;
+    height: 10%;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+a {text-decoration: none; color: black;}
+a:visited { color:black; }
+a:hover { color:blue; }
+
+/* Ruleset for entire body. Sets general font, margin space, text alignment, and border (for visibility) */
+body {
+    font-family: 'Times New Roman';
+    margin: auto;
+    border: 10px solid black;
+    text-align: center;
+}
+
+/* Ruleset that targets Homepage box*/
+#HOMEPAGE {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.HP-LOWER {
+    border: 2px solid black;
+    display: flex;
+}
+
+.HP-ABME, .HP-CONTACT {
+    background-color: gray;
+}
+
+.HP-IMAGE, .HP-ABME, .HP-CONTACT {
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    flex: 1;
+}
+
+.HP-IMAGE img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Ruleset that targets PandR Team box*/
+#PROJECTS-AND-RESEARCH-TEAM{
+    border: 2px solid black;
+    background-color: blueviolet;
+}
+
+/* Ruleset targeting upper PandR box with research statement and supporting media*/
+.PR-UPPER {
+    
+    padding: 10px;
+    display: flex;
+}
+
+.IMG-LEFT, .STATEMENT, .IMG-RIGHT {
+    background-color: gray;
+    flex: 1;
+}
+
+/* Ruleset targeting media in PR-UPPER*/
+.IMG-LEFT {
+    display: inline-block;
+    border: 2px solid black;
+    width: 100px;
+    height: 200px;
+}
+
+/* Ruleset targeting central statement in PR-UPPER*/
+.STATEMENT {
+    display: inline-block;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+/* Ruleset targeting media in PR-UPPER*/
+.IMG-RIGHT {
+    display: inline-block;
+    border: 2px solid black;
+    width: 100px;
+    height: 200px;
+}
+
+/* Ruleset targeting all images in PR-LOWER*/
+.ONEONE, .ONE-TWO, .ONE-THREE, .TWOONE, .TWO-TWO, .TWO-THREE  {
+    display: inline-block;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: blanchedalmond;
+}
+
+.PR-LOWER{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Ruleset that targets Teaching box*/
+#TEACHING{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.CLASS-NOTES{
+    display: inline-block;
+    border: 2px solid black;
+    width: 250px;
+    height: 500px;
+    background: gray;
+}
+
+.FUN-LINKS{
+    display: inline-block;
+    border: 2px solid black;
+    width: 250px;
+    height: 500px;
+    background: gray;
+}
+
+/* Ruleset that targets DEI box*/
+#DEI{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.RELATED-LINKS {
+    border: 2px solid black;
+    background: gray;
+    display: flex;
+}
+
+.COL-ONE, .COL-TWO {
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    flex: 1;
+}
+
+#ISR-SITE {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: blueviolet;
+}
