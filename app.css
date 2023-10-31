@@ -1,7 +1,6 @@
 /* Ruleset for Navigation bar at top of site */
 nav {
     padding: 5px;
-    background-color: blueviolet;
 }
 
 /* Ruleset targeting each link in the navigation bar */
@@ -29,7 +28,6 @@ body {
 #HOMEPAGE {
     border: 2px solid black;
     padding: 10px;
-    background-color: blueviolet;
 }
 
 .HP-LOWER {
@@ -39,6 +37,10 @@ body {
 
 .HP-ABME, .HP-CONTACT {
     background-color: gray;
+}
+
+.HP-IMAGE {
+    background-color: blanchedalmond;
 }
 
 .HP-IMAGE, .HP-ABME, .HP-CONTACT {
@@ -56,18 +58,22 @@ body {
 /* Ruleset that targets PandR Team box*/
 #PROJECTS-AND-RESEARCH-TEAM{
     border: 2px solid black;
-    background-color: blueviolet;
 }
 
 /* Ruleset targeting upper PandR box with research statement and supporting media*/
 .PR-UPPER {
-    
     padding: 10px;
     display: flex;
 }
+.STATEMENT {
+    background-color: gray;
+}
+
+.IMG-LEFT, .IMG-RIGHT {
+    background-color: blanchedalmond;
+}
 
 .IMG-LEFT, .STATEMENT, .IMG-RIGHT {
-    background-color: gray;
     flex: 1;
 }
 
@@ -99,8 +105,8 @@ body {
 .ONEONE, .ONE-TWO, .ONE-THREE, .TWOONE, .TWO-TWO, .TWO-THREE  {
     display: inline-block;
     border: 2px solid black;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     background-color: blanchedalmond;
 }
 
@@ -113,7 +119,6 @@ body {
 #TEACHING{
     border: 2px solid black;
     padding: 10px;
-    background-color: blueviolet;
 }
 
 .CLASS-NOTES{
@@ -136,13 +141,16 @@ body {
 #DEI{
     border: 2px solid black;
     padding: 10px;
-    background-color: blueviolet;
 }
 
 .RELATED-LINKS {
     border: 2px solid black;
     background: gray;
     display: flex;
+}
+
+.COL-TWO {
+    background-color: blanchedalmond;
 }
 
 .COL-ONE, .COL-TWO {
@@ -155,5 +163,14 @@ body {
 #ISR-SITE {
     border: 2px solid black;
     padding: 10px;
-    background-color: blueviolet;
+}
+
+.LOWER-ISR {
+    border: 2px solid black;
+    display: flex;
+}
+
+.THEORY, .OBSERVATIONS, .EXPERIMENT {
+    border: 2px solid black;
+    background: gray;
 }
