@@ -1,24 +1,22 @@
-/* Ruleset for Navigation bar at top of site */
+/* Ruleset for Navigation Bar */
 nav {
-    padding: 5px;
+    padding: 2px;
 }
 
-/* Ruleset targeting each link in the navigation bar */
-.Button {
+/* Ruleset targeting all buttons */
+nav .Button {
     display: inline-block;
-    width: 250px;
-    height: 10%;
-    font-family: Helvetica;
+    width: 300px;
     font-weight: bold;
 }
 
+/* Ruleset targeting anchor/button/link behavior */
 a {text-decoration: none; color: black;}
 a:visited { color:black; }
 a:hover { color:white; }
 
-/* Ruleset for entire body. Sets general font, margin space, text alignment, and border (for visibility) */
+/* Ruleset for entire body */
 body {
-    font-family: 'Times New Roman';
     margin: auto;
     border: 5px solid black;
     text-align: center;
@@ -31,7 +29,7 @@ body {
 }
 
 #HOMEPAGE h1 {
-    color: rgb(2, 43, 113)
+    color: rgb(2, 43, 113);
 }
 
 #PROJECTS-AND-RESEARCH-TEAM h1 {
@@ -164,16 +162,23 @@ body {
     flex: 1;
 }
 
+#MAIN-ISR-PAGE {
+    margin: auto;
+}
+
 #ISR-SITE {
     padding: 10px;
 }
 
+.UPPER-ISR h1{
+    color: rgb(2, 43, 113)
+}
+
 .LOWER-ISR {
-    border: 2px solid black;
+    border: 2px solid white;
     display: flex;
 }
 
 .THEORY, .OBSERVATIONS, .EXPERIMENT {
-    border: 2px solid black;
     background: gray;
 }
