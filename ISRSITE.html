@@ -3,6 +3,12 @@
 <!--Header Section containing hyperlink to CSS stylesheet-->
     <head>
         <link href="app.css" rel="stylesheet"> <!--Link to CSS Style Sheet-->
+        <nav> <!--Nav element containing buttons which are links to different parts of the page-->
+            <div class = Button><a href = "#JUPYTER-NOTEBOOK">Jupyter Notebook</a></div>
+            <div class = Button><a href = "#SIMULATION">Simulation</a></div>
+            <!--Five divs, each of the class Button that contain anchor element links to different parts of the page-->
+
+        </nav>
     </head>
 
 <!--Body Section containing Homepage, Projects and Research Team, Teaching, DEI, and ISR Sections-->
@@ -11,27 +17,56 @@
         <div id = "MAIN ISR PAGE"> <!--Main ISR box-->
 
             <div class = "UPPER-ISR"> <!--Upper ISR section with ISR site title and paragraph description-->
-                <h1>ISR SITE</h1>
-                    <p>This is where the ISR SITE description will go after it is written. Right now it is only a placeholder field and this text is being used to measure how much space will be taken up.</p>
+                <h1>NJIT Radar Collective</h1>
+                    <p>The goal of this website is to be a contemporary, online “textbook” for Incoherent Scatter Radars. We have constructed the chapters of this textbook to be as stand-alone as possible, with required dependencies listed at the start of each chapter so that readers can explore the material in an order that best suits their needs. Each chapter contains Jupyter notebooks to illustrate the concepts, and to provide basic Python code for use in research.</p>
             </div>
 
             <div class = "LOWER-ISR"> <!--Lower ISR section with theory section, observations section, and experiment section-->
 
-                <div class = "THEORY"> <!--Theory box that holds theory title and links to theory pages-->
+                <div id = "THEORY"> <!--Theory box that holds theory title and links to theory pages-->
                     <h2>THEORY</h2>
-                        <p>PLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER</p>
+                    <div id = "TContent">
+                        <div class = "Button"><a href = "https://en.wikipedia.org/wiki/Thomson_scattering" target = _blank>T.1: Thomson Scattering</a></div>
+                        <div class = "Button"><a href = "https://en.wikipedia.org/wiki/Fluctuation-dissipation_theorem" target = _blank>T.2: Fluctuation-Dissipation Approach</a></div>
+                        <div class = "Button"><a href = "https://en.wikipedia.org/wiki/Dressed_particle" target = _blank>T.3: Dressed Particle Approach</a></div>
+                        <div class = "Button"><a href = "https://en.wikipedia.org/wiki/Plasma_modeling" target = _blank>T.4: Plasma Kinetic Approach</a></div>
+                        <div class = "Button"><a href = "https://en.wikipedia.org/wiki/Incoherent_scatter" target = _blank>T.5: Features of ISR Spectra</a></div>
+                    </div>
                 </div>
-                <div class = "OBSERVATIONS"> <!--Observation box that holds observations title and links to observation pages-->
-                    <h2>OBSERVATIONS</h2>
-                        <p>PLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER</p>
+                <div id = "OBSERVATION"> <!--Observation box that holds observations title and links to observation pages-->
+                    <h2>OBSERVATION</h2>
+                    <div id = "OContent">
+                        <div class = Button><a href = "https://en.wikipedia.org/wiki/Haystack_Observatory" target = _blank>O.1: Standard Madrigal Outputs</a></div>
+                        <div class = Button><a href = "https://en.wikipedia.org/wiki/Incoherent_scatter" target = _blank>O.2: Instabilities </a></div>
+                        <div class = Button><a href = "https://simple.wikipedia.org/wiki/Photoelectric_effect" target = _blank>O.3: Effects of Photoelectron</a></div>
+                        <div class = Button><a href = "https://en.wikipedia.org/wiki/Collision" target = _blank>O.4: Effects of Collisions</a></div>
+                    </div>
                 </div>
-                <div class = "EXPERIMENT"> <!--Experiment box that holds experiment title and links to experiment pages-->
+                <div id = "EXPERIMENT"> <!--Experiment box that holds experiment title and links to experiment pages-->
                     <h2>EXPERIMENT</h2>
-                        <p>PLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER TEXTPLACEHOLDER</p>
+                    <div id = "EContent">
+                        <div class = Button><a href = "https://en.wikipedia.org/wiki/List_of_radars" target = _blank>E.1: Overview of Existing Radars</a></div>
+                        <div class = Button><a href = "">E.2: Basic Experimental Setup</a></div>
+                        <div class = Button><a href = "https://en.wikipedia.org/wiki/Signal_processing" target = _blank>E.3: Signal Processing</a></div>
+                        <div class = Button><a href = "https://en.wikipedia.org/wiki/Spectral_line_shape" target = _blank>E.4: Fitting Spectra</a></div>
+                    </div>
                 </div>
-
             </div>
 
+            <div class = "EXTRA-ISR">
+                <div id = "JUPYTER-NOTEBOOK"> 
+                    <h2>JUPYTER NOTEBOOK</h2>
+                    <div id = "JContent">
+                        <p><a href = "">Direct Link to Python Code</a></p>
+                    </div>
+                </div>
+                <div id = "SIMULATION"> 
+                    <h2>SIMULATION</h2>
+                    <div id = "SContent">
+                        <p>My Work (To Be Performed Later)</p>
+                    </div>
+                </div>
+            </div>         
         </div>  
 
     </body>

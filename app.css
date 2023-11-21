@@ -1,184 +1,217 @@
-/* Ruleset for Navigation Bar */
+/* Ruleset that implements a custom font */
+@font-face {
+    font-family: njitFont;
+    src: url(StoneSansRegular.ttf);
+}
+
+/* Ruleset targeting navigation bar */
 nav {
     padding: 2px;
 }
 
-/* Ruleset targeting all buttons */
+/* Ruleset targeting buttons in the nav box */
 nav .Button {
     display: inline-block;
     width: 300px;
     font-weight: bold;
 }
 
-/* Ruleset targeting anchor/button/link behavior */
-a {text-decoration: none; color: black;}
-a:visited { color:black; }
-a:hover { color:white; }
+/* Ruleset targeting default anchor behavior */
+a {
+    text-decoration: none; color: white;
+}
 
-/* Ruleset for entire body */
+/* Ruleset targeting visited anchor behavior */
+a:visited { 
+    color:white; 
+}
+
+/* Ruleset targeting hover anchor behavior */
+a:hover { 
+    color:black; 
+}
+
+/* Ruleset targeting entire body */
 body {
-    margin: auto;
-    border: 5px solid black;
     text-align: center;
-    background-color: rgb(236, 85, 74);
+    background-color: rgb(2, 43, 113);
 }
 
-/* Ruleset that targets Homepage box*/
-#HOMEPAGE {
-    padding: 10px;
+/* Ruleset targeting all titles of each of the boxes */
+#HOMEPAGE h1, #PROJECTS-AND-RESEARCH-TEAM h1, #TEACHING h1, #DEI h1 {
+    color:white;
 }
 
-#HOMEPAGE h1 {
-    color: rgb(2, 43, 113);
-}
-
-#PROJECTS-AND-RESEARCH-TEAM h1 {
-    color: rgb(2, 43, 113)
-}
-
-#TEACHING h1 {
-    color: rgb(2, 43, 113)
-}
-
-#DEI h1 {
-    color: rgb(2, 43, 113)
-}
-
+/* Ruleset targeting the image, about me, and contact information section of the homepage box */
 .HP-LOWER {
-    border: 2px solid white;
     display: flex;
+    background: rgb(145, 9, 12);
 }
 
-.HP-ABME, .HP-CONTACT {
-    background-color: gray;
+/* Ruleset targeting the titles of the about me, and contact information boxes */
+.HP-ABME h2, .HP-CONTACT h2 {
+    color: white;
 }
 
-.HP-IMAGE {
-    background-color: blanchedalmond;
-}
-
+/* Ruleset targeting the dimensions of the image, about me, and contact information boxes */
 .HP-IMAGE, .HP-ABME, .HP-CONTACT {
-    width: 250px;
-    height: 250px;
     flex: 1;
+    width: 200px;
+    height: 200px;
 }
 
-.HP-IMAGE img {
-    width: 150px;
-    height: 150px;
-}
-
-/* Ruleset that targets PandR Team box*/
-
-/* Ruleset targeting upper PandR box with research statement and supporting media*/
+/* Ruleset targeting upper PandR box with research statement and supporting media */
 .PR-UPPER {
-    padding: 10px;
     display: flex;
 }
-.STATEMENT {
-    background-color: gray;
+
+/* Ruleset targeting the titles of the research statement box and team members box */
+.PR-UPPER h2, .PR-LOWER h2 {
+    color: white;
 }
 
-.IMG-LEFT, .IMG-RIGHT {
-    background-color: blanchedalmond;
-}
-
+/* Ruleset targeting the image and research statement boxes */
 .IMG-LEFT, .STATEMENT, .IMG-RIGHT {
     flex: 1;
+    background: rgb(145, 9, 12);
 }
 
-/* Ruleset targeting media in PR-UPPER*/
-.IMG-LEFT {
+/* Ruleset targeting media in PR-UPPER */
+.IMG-LEFT, .IMG-RIGHT {
     display: inline-block;
-    border: 2px solid white;
     width: 100px;
     height: 200px;
 }
 
-/* Ruleset targeting central statement in PR-UPPER*/
+/* Ruleset targeting the research statement in PR-UPPER */
 .STATEMENT {
     display: inline-block;
-    border: 2px solid white;
     width: 250px;
     height: 250px;
 }
 
-/* Ruleset targeting media in PR-UPPER*/
-.IMG-RIGHT {
-    display: inline-block;
-    border: 2px solid white;
-    width: 100px;
-    height: 200px;
-}
-
-/* Ruleset targeting all images in PR-LOWER*/
+/* Ruleset targeting all images in PR-LOWER */
 .ONEONE, .ONE-TWO, .ONE-THREE, .TWOONE, .TWO-TWO, .TWO-THREE  {
     display: inline-block;
-    border: 2px solid white;
-    width: 150px;
-    height: 150px;
-    background-color: blanchedalmond;
+    background: rgb(145, 9, 12);
+    width: 250px;
+    height: 250px;
 }
 
-/* Ruleset that targets Teaching box*/
-#TEACHING{
-    padding: 10px;
+/* Ruleset targeting the title of the teaching sub-box */
+.INFO-SECTION h2 {
+    color: white;
 }
 
+/* Ruleset targeting the class notes box */
 .CLASS-NOTES{
-    display: inline-block;
-    border: 2px solid white;
     width: 250px;
     height: 500px;
-    background: gray;
+    display: inline-block;
+    background: rgb(145, 9, 12);
+    color: white;
 }
 
+/* Ruleset targeting the fun links box */
 .FUN-LINKS{
-    display: inline-block;
-    border: 2px solid white;
     width: 250px;
     height: 500px;
-    background: gray;
+    display: inline-block;
+    background: rgb(145, 9, 12);
+    color: white;
 }
 
-/* Ruleset that targets DEI box*/
-#DEI{
-    padding: 10px;
+/* Ruleset targeting the title of the DEI sub-box */
+#DEI h2 {
+    color: white;
 }
 
+/* Ruleset targeting the related links box */
 .RELATED-LINKS {
-    background: gray;
     display: flex;
+    background: rgb(145, 9, 12);
 }
 
-.COL-TWO {
-    background-color: blanchedalmond;
-}
-
+/* Ruleset targeting the columns of the teaching box */
 .COL-ONE, .COL-TWO {
-    border: 2px solid white;
     width: 250px;
     height: 250px;
     flex: 1;
+    background: rgb(145, 9, 12);
+    color: white;
 }
 
-#MAIN-ISR-PAGE {
-    margin: auto;
-}
-
-#ISR-SITE {
-    padding: 10px;
-}
-
+/* Ruleset targeting the title of the ISR site box */
 .UPPER-ISR h1{
-    color: rgb(2, 43, 113)
+    color: white;
 }
 
+.UPPER-ISR p {
+    color: white;
+    font-size: 20;
+}
+
+/* Ruleset targeting the main portion of the ISR site */
 .LOWER-ISR {
-    border: 2px solid white;
     display: flex;
+    border: 10px solid white;
+    margin-bottom: 10px;
 }
 
-.THEORY, .OBSERVATIONS, .EXPERIMENT {
-    background: gray;
+/* Ruleset targeting all boxes of the ISR site */
+#THEORY, #OBSERVATION, #EXPERIMENT, #JUPYTER-NOTEBOOK, #SIMULATION {
+    width: 750px;
+    height: 250px;
+    color: white;
+    background: rgb(145, 9, 12);
+}
+
+#THEORY, #OBSERVATION, #EXPERIMENT {
+    display: flex;
+    flex-direction: column;
+}
+
+#TContent, #OContent, #EContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#TContent>*, #OContent>*, #EContent>* {
+    flex: 1;
+}
+
+.EXTRA-ISR {
+    border: 10px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#JUPYTER-NOTEBOOK, #SIMULATION {
+    width: 100%;
+}
+
+#JUPYTER-NOTEBOOK {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#JContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#JContent>* {
+    flex: 1;
+}
+
+.EXTRA-ISR a{
+    font-size: 50px;
 }
