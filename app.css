@@ -46,11 +46,25 @@ body {
 .HP-LOWER {
     display: flex;
     background: rgb(145, 9, 12);
+    border: 10px solid white;
 }
 
 /* Ruleset targeting the titles of the about me, and contact information boxes */
-.HP-ABME h2, .HP-CONTACT h2 {
+.HP-ABME h2, .HP-CONTACT h2, .HP-ABME p {
     color: white;
+}
+
+.HP-IMAGE {
+    overflow: hidden;
+}
+
+.HP-IMAGE img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 /* Ruleset targeting the dimensions of the image, about me, and contact information boxes */
@@ -60,9 +74,29 @@ body {
     height: 200px;
 }
 
+.HP-CONTACT {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.CONTACT-CONTENT {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+}
+
+.CONTACT-CONTENT>* {
+    flex: 1;
+}
+
 /* Ruleset targeting upper PandR box with research statement and supporting media */
 .PR-UPPER {
     display: flex;
+    border: 10px solid white;
+    margin: auto;
 }
 
 /* Ruleset targeting the titles of the research statement box and team members box */
@@ -79,8 +113,18 @@ body {
 /* Ruleset targeting media in PR-UPPER */
 .IMG-LEFT, .IMG-RIGHT {
     display: inline-block;
-    width: 100px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.IMG-LEFT img, .IMG-RIGHT img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 /* Ruleset targeting the research statement in PR-UPPER */
@@ -88,6 +132,7 @@ body {
     display: inline-block;
     width: 250px;
     height: 250px;
+    color: white;
 }
 
 /* Ruleset targeting all images in PR-LOWER */
@@ -99,46 +144,85 @@ body {
 }
 
 /* Ruleset targeting the title of the teaching sub-box */
-.INFO-SECTION h2 {
+.INFO-SECTION h2, .INFO-SECTION p {
     color: white;
+}
+
+.TEACH-LOWER>* {
+    border: 10px solid white;
+}
+
+.TEACH-LOWER {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Ruleset targeting the class notes box */
-.CLASS-NOTES{
+.CLASS-NOTES, .FUN-LINKS{
     width: 250px;
     height: 500px;
-    display: inline-block;
     background: rgb(145, 9, 12);
     color: white;
 }
 
-/* Ruleset targeting the fun links box */
-.FUN-LINKS{
-    width: 250px;
-    height: 500px;
-    display: inline-block;
-    background: rgb(145, 9, 12);
-    color: white;
+.NOTES-CONTENT {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.NOTES-CONTENT>* {
+    flex: 1;
+}
+
+.LINKS-CONTENT {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.LINKS-CONTENT>* {
+    flex: 1;
 }
 
 /* Ruleset targeting the title of the DEI sub-box */
-#DEI h2 {
+#DEI h2, #DEI p {
     color: white;
 }
 
 /* Ruleset targeting the related links box */
 .RELATED-LINKS {
     display: flex;
+    justify-content: space-evenly;
     background: rgb(145, 9, 12);
+    border: 10px solid white;
 }
 
 /* Ruleset targeting the columns of the teaching box */
 .COL-ONE, .COL-TWO {
     width: 250px;
     height: 250px;
-    flex: 1;
     background: rgb(145, 9, 12);
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.COL-ONE-CONTENT {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.COL-ONE-CONTENT>* {
+    flex: 1;
 }
 
 /* Ruleset targeting the title of the ISR site box */
