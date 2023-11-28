@@ -45,10 +45,83 @@ body {
 /* Ruleset targeting the image, about me, and contact information section of the homepage box */
 .HP-LOWER {
     display: flex;
-    background: rgb(145, 9, 12);
-    border: 10px solid white;
+    height:500px;
+    width:100%;
 }
 
+.HP-LEFT, .HP-RIGHT {
+    height: 100%;
+    width: 200px;
+}
+
+.HP-LEFT {
+    flex:1;
+    flex-direction: column;
+    display: flex;
+}
+
+.HP-LEFT-IMG, .HP-LEFT-INFO {
+    width: 100%;
+}
+
+.HP-LEFT-IMG {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HP-LEFT-INFO {
+    flex:2;
+}
+
+.HP-LEFT-LINKS {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HP-LEFT-LINKS img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.HP-LEFT-LINKS button {
+    outline: 0;
+}
+
+.HP-RIGHT {
+    display: flex;
+    flex-direction: column;
+    flex:2;
+}
+
+.HP-RIGHT-UPPER, .HP-RIGHT-LOWER {
+    width: 100%;
+    height:100%;
+}
+
+.HP-RIGHT-UPPER {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HP-RIGHT-UPPER h2 {
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.HP-RIGHT-LOWER {
+    flex:2;
+}
 /* Ruleset targeting the titles of the about me, and contact information boxes */
 .HP-ABME h2, .HP-CONTACT h2, .HP-ABME p {
     color: white;

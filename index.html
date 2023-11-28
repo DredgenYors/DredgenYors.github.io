@@ -8,11 +8,11 @@
         <link href="app.css" rel="stylesheet"> <!--Link to CSS Style Sheet-->
         <nav> <!--Nav element containing buttons which are links to different parts of the page-->
 
-                <div class = Button><a href = "#HOMEPAGE">Homepage</a></div>
-                <div class = Button><a href = "#PROJECTS-AND-RESEARCH-TEAM">Projects and Research Team</a></div>
-                <div class = Button><a href = "#TEACHING">Teaching</a></div>
-                <div class = Button><a href = "#DEI">Diversity-Equity-Inclusion</a></div>
-                <div class = Button><a href = "ISRSITE.html" target = _blank>NJIT Radar Collective</a></div>
+                <button><a href = "#HOMEPAGE">Homepage</a></button>
+                <button><a href = "#PROJECTS-AND-RESEARCH-TEAM">Projects and Research Team</a></button>
+                <button class = Button><a href = "#TEACHING">Teaching</a></button>
+                <button class = Button><a href = "#DEI">Diversity-Equity-Inclusion</a></button>
+                <button class = Button><a href = "ISRSITE.html" target = _blank>NJIT Radar Collective</a></button>
                 <!--Five divs, each of the class Button that contain anchor element links to different parts of the page-->
 
         </nav>
@@ -23,18 +23,37 @@
 
         <div id = "HOMEPAGE"> <!--Homepage box-->
 
-            <h1>Lindsay Goodwin</h1> <!--Homepage title-->
             <div class = "HP-LOWER"> <!--Lower Homepage box with image section, about me section, and contact section-->
-                <div class = "HP-IMAGE"> <!--Image box-->
+                <div class = "HP-LEFT">
+                    <div class = "HP-LEFT-IMG">
+                        <img src="" alt="IMG">
+                    </div>
+                    <div class = "HP-LEFT-INFO">
+                        <h2>Lindsay Goodwin</h2>
+                        <h2>Assistant Professor</h2>
+                        <div class = "HP-LEFT-LINKS">
+                            <button class = "LINKED-IN"><img src = "https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png" alt = "IMG"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "HP-RIGHT">
+                    <div class = "HP-RIGHT-UPPER">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class = "HP-RIGHT-LOWER"></div>
+                </div>
+                
+                <!--TEST HP    
+                <div class = "HP-IMAGE"> 
                     <img src="" alt="IMG">
                 </div>
 
-                <div class = "HP-ABME"> <!--About me box-->
+                <div class = "HP-ABME"> 
                 <h2>About Me</h2>
                     <p>This is where the about me statement will go after it is written. Right now it is only a placeholder field and this text is being used to measure how much space will be taken up.</p>
                 </div>
 
-                <div class = "HP-CONTACT"> <!--Contact box-->
+                <div class = "HP-CONTACT"> 
                 <h2>Contact Information</h2>
                     <div class = "CONTACT-CONTENT">
                         <div class = Button><a href = "">LinkedIn</a></div>
@@ -42,9 +61,10 @@
                         <div class = Button><a href = "">Twitter</a></div>
                         <div class = Button><a href = "">Instagram</a></div>
                         <div class = Button><a href = "">YouTube</a></div>
-                        <!--Five divs, each of the class Button that contain links to social media-->
+                        
                     </div>
                 </div>
+                --> 
             </div>
 
         </div>
