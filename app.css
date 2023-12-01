@@ -165,6 +165,51 @@ body {
     flex: 1;
 }
 
+#PROJECTS-AND-RESEARCH-TEAM {
+    display: flex;
+    height:500px;
+    width:100%;
+}
+
+.P-AND-R-LEFT, .P-AND-R-RIGHT {
+    flex:1;
+    height:100%;
+    display: flex;
+    flex-direction: column;;
+}
+
+.PR-LEFT-TOP, .PR-LEFT-BOT {
+    width: 100%;
+}
+
+.PR-LEFT-TOP {
+    flex: 1;
+}
+
+.PR-LEFT-BOT {
+    flex: 2;
+}
+
+.PR-RIGHT-TOP, .PR-RIGHT-BOT {
+    width: 100%;
+}
+
+.PR-RIGHT-TOP {
+    flex: 1;
+}
+
+.PR-RIGHT-BOT {
+    flex: 2;
+    display: flex;
+}
+
+.PR-RIGHT-BOT>* {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 /* Ruleset targeting upper PandR box with research statement and supporting media */
 .PR-UPPER {
     display: flex;
@@ -175,6 +220,30 @@ body {
 /* Ruleset targeting the titles of the research statement box and team members box */
 .PR-UPPER h2, .PR-LOWER h2 {
     color: white;
+}
+
+#DEI {
+    display: flex;
+    height:500px;
+    width:100%;
+}
+
+.DEI-LEFT, .DEI-RIGHT {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.DEI-RIGHT {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.DEI-RIGHT>* {
+    flex: 1;
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
 }
 
 /* Ruleset targeting the image and research statement boxes */
@@ -221,6 +290,41 @@ body {
     color: white;
 }
 
+#TEACHING {
+    display: flex;
+    height:500px;
+    width:100%;
+    overflow: hidden;
+}
+
+.TEACHING-MAIN-LEFT, .TEACHING-MAIN-RIGHT {
+    height:100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.TEACHING-RIGHT-TOP, .TEACHING-RIGHT-BOT {
+    height:425px;
+}
+
+.TEACHING-RIGHT-TOP {
+    flex: 1;
+}
+
+.TEACHING-RIGHT-BOT {
+    flex: 2;
+    display: flex;
+}
+
+.TEACHING-LEFT-TOP {
+    flex: 1;
+}
+
+.TEACHING-LEFT-TOP {
+    font-size: 30px;
+}
+
 .TEACH-LOWER>* {
     border: 10px solid white;
 }
@@ -232,10 +336,10 @@ body {
 
 /* Ruleset targeting the class notes box */
 .CLASS-NOTES, .FUN-LINKS{
-    width: 250px;
-    height: 500px;
+    width: auto;
     background: rgb(145, 9, 12);
     color: white;
+    flex: 1;
 }
 
 .NOTES-CONTENT {
