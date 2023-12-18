@@ -1,46 +1,27 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}
-
 a {
-    text-decoration: none; color: white;
+    text-decoration: none; 
+    color: white;
 }
 
-/* Ruleset targeting visited anchor behavior */
 a:visited { 
     color:white; 
 }
 
-/* Ruleset targeting hover anchor behavior */
 a:hover { 
     color:black; 
 }
 
 nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(2, 43, 113); 
 }
 
-/* Ruleset targeting buttons in the nav box */
-nav>* {
-    flex: 1;
-}
-
-/* Ruleset targeting entire body */
 body {
     text-align: center;
 }
 
 #HOMEPAGE {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* Ruleset targeting the image, about me, and contact information section of the homepage box */
-.HP-LOWER {
     display: flex;
     height:500px;
     width:100%;
@@ -48,49 +29,38 @@ body {
 
 .HP-LEFT, .HP-RIGHT {
     height: 100%;
-    width: 200px;
+    font-family: "Helvetica", sans-serif;
 }
 
 .HP-LEFT {
     flex:1;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 
 .HP-LEFT-IMG {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid black 5px;
-    width: 70%;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.HP-LEFT-IMG img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 
 .HP-LEFT-INFO {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    flex:1;
-    width: 100%;
+    align-items: center;
 }
 
-.HP-LEFT-LINKS {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.LINKED-IN {
-    width: 25px;
-    height: 25px;
-}
-
-.LINKED-IN img {
-    width: 100%;
-    height: 100%;
+.HP-LEFT-INFO img {
+    width: 50px;
+    height: 50px;
 }
 
 .HP-RIGHT {
@@ -99,45 +69,22 @@ body {
     flex:2;
 }
 
-.HP-RIGHT-UPPER, .HP-RIGHT-LOWER {
-    width: 100%;
-    height:100%;
-}
-
-.HP-RIGHT-UPPER {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
-
-.HP-RIGHT-UPPER h1 {
-    justify-content: center;
-    width: 50%;
-    text-align: center;
-    font-size: 50px;
-}
-
-.HP-RIGHT-LOWER {
-    flex:2;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.HP-RIGHT h1 {
+    font-size: 60px;
+    text-decoration: underline;
 }
 
 .HP-ABME-STMT {
-    height: 90%;
-    width: 50%;
-    border: solid  5px;
+    height: 50%;
+    width: 100%;
+    font-size: 35px;
 }
 
 #PROJECTS-AND-RESEARCH-TEAM {
     display: flex;
     height:500px;
     width:100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-family: Helvetica, sans-serif;
 }
 
 .P-AND-R-LEFT, .P-AND-R-RIGHT {
@@ -157,6 +104,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    text-decoration: underline;
 }
 
 .PR-LEFT-TOP>* {
@@ -196,6 +144,7 @@ body {
     width:100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: Helvetica, sans-serif;
 }
 
 .DEI-LEFT, .DEI-RIGHT {
@@ -206,6 +155,7 @@ body {
 
 .DEI-LEFT {
     font-size: 30px;
+    text-decoration: underline;
     align-items: center;
 }
 
@@ -232,9 +182,7 @@ body {
     display: flex;
     height:500px;
     width:100%;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-family: "Helvetica", sans-serif;
 }
 
 .TEACHING-MAIN-LEFT {
@@ -242,15 +190,18 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    font-size: 40px;
-    justify-content: center;
     align-items: center;
 }
 
+.TEACHING-MAIN-LEFT h1 {
+    font-size: 70px;
+    text-decoration: underline;
+}
+
 .TEACH-STMT {
-    border: solid black 5px;
-    width: 50%;
+    width: 90%;
     height: 250px;
+    font-size: 22px;
 }
 
 .TEACHING-MAIN-RIGHT {
@@ -259,7 +210,6 @@ body {
     display: flex;
 }
 
-/* Ruleset targeting the class notes box */
 .CLASS-NOTES, .FUN-LINKS{
     width: auto;
     color: black;
@@ -304,6 +254,7 @@ body {
     width: 100%;
     position: relative;
     filter: brightness(75%);
+    object-fit: cover;
 }
 
 .CENTER-TEXT {
@@ -321,12 +272,15 @@ body {
     font-family: "Helvetica", sans-serif;
 }
 
+#ISR-BODY h2 {
+    text-decoration: underline;
+}
+
 .UPPER-ISR p {
     color: white;
     font-size: 20px;
 }
 
-/* Ruleset targeting the main portion of the ISR site */
 .LOWER-ISR {
     display: flex;
     border: 10px solid white;
@@ -334,7 +288,6 @@ body {
     background: rgb(145, 9, 12);
 }
 
-/* Ruleset targeting all boxes of the ISR site */
 #THEORY, #OBSERVATION, #EXPERIMENT, #JUPYTER-NOTEBOOK, #SIMULATION {
     width: 750px;
     height: 250px;
