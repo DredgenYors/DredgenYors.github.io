@@ -1,248 +1,332 @@
-/* Ruleset that implements a custom font */
-@font-face {
-    font-family: njitFont;
-    src: url(StoneSansRegular.ttf);
+html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden !important;
 }
 
-/* Ruleset targeting navigation bar */
-nav {
-    padding: 2px;
-}
-
-/* Ruleset targeting buttons in the nav box */
-nav .Button {
-    display: inline-block;
-    width: 300px;
-    font-weight: bold;
-}
-
-/* Ruleset targeting default anchor behavior */
 a {
-    text-decoration: none; color: white;
+    text-decoration: none; 
+    color: white;
 }
 
-/* Ruleset targeting visited anchor behavior */
 a:visited { 
     color:white; 
 }
 
-/* Ruleset targeting hover anchor behavior */
 a:hover { 
-    color:black; 
+    color:red; 
 }
 
-/* Ruleset targeting entire body */
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
 body {
     text-align: center;
-    background-color: rgb(2, 43, 113);
-}
-
-/* Ruleset targeting all titles of each of the boxes */
-#HOMEPAGE h1, #PROJECTS-AND-RESEARCH-TEAM h1, #TEACHING h1, #DEI h1 {
-    color:white;
-}
-
-/* Ruleset targeting the image, about me, and contact information section of the homepage box */
-.HP-LOWER {
-    display: flex;
-    background: rgb(145, 9, 12);
-    border: 10px solid white;
-}
-
-/* Ruleset targeting the titles of the about me, and contact information boxes */
-.HP-ABME h2, .HP-CONTACT h2, .HP-ABME p {
+    background-color: #1B1B1B;
     color: white;
 }
 
-.HP-IMAGE {
-    overflow: hidden;
+#DIVIDER {
+    background-color: white;
+    width: auto;
+    height: 5px;
 }
 
-.HP-IMAGE img {
+#HOMEPAGE {
+    display: flex;
+    height:500px;
+    width:100%;
+}
+
+#HOMEPAGE-CONTENT-DIVIDER {
+    background-color: white;
+    width: 5px;
+    margin-top: 15px;
+    margin-right: 60px;
+}
+
+.HP-LEFT, .HP-RIGHT {
+    height: 100%;
+}
+
+.HP-LEFT {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HP-LEFT-IMG img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
+    object-fit:cover;
+    border-radius: 80%;
 }
 
-/* Ruleset targeting the dimensions of the image, about me, and contact information boxes */
-.HP-IMAGE, .HP-ABME, .HP-CONTACT {
+.HP-LEFT-INFO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#NAME {
+    font-size: 30px;
+}
+
+#TITLE {
+    font-size: 25px;
+}
+
+.HP-LEFT-INFO img {
+    width: 50px;
+    height: 50px;
+}
+
+.HP-RIGHT {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex:2;
+}
+
+.HP-RIGHT h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.HP-RIGHT-TITLE {
+    margin-top: 10px;
+}
+
+.HP-ABME-STMT {
+    font-size: 30px;
+    margin: 1rem;
+}
+
+#PROJECTS-AND-RESEARCH-TEAM {
+    display: flex;
+    height:500px;
+    width:100%;
+}
+
+.P-AND-R-LEFT, .P-AND-R-RIGHT {
+    flex:1;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PR-LEFT-TOP, .PR-LEFT-BOT {
+    width: 100%;
+}
+
+.PR-LEFT-TOP {
     flex: 1;
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-decoration: underline;
+}
+
+.PR-LEFT-TOP>* {
+    font-size: 50px;
+}
+
+.PR-LEFT-BOT {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.PR-RECH-STMT {
+    flex: 1;
+    border: solid black 5px;
+    width: 75%;
     height: 200px;
 }
 
-.HP-CONTACT {
+.P-AND-R-RIGHT {
+    align-items: center;
+    justify-content: center;
+}
+
+.P-AND-R-IMAGE {
+    width: 400px;
+    height: 400px;
+    border: solid black 5px;
+}
+
+
+#DEI {
+    display: flex;
+    height:500px;
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.DEI-LEFT, .DEI-RIGHT {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
 }
 
-.CONTACT-CONTENT {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
+.DEI-LEFT {
+    font-size: 30px;
+    text-decoration: underline;
+    align-items: center;
 }
 
-.CONTACT-CONTENT>* {
-    flex: 1;
+.DEI-STMT {
+    border: solid black 5px;
+    width: 300px;
+    height: 300px;
 }
 
-/* Ruleset targeting upper PandR box with research statement and supporting media */
-.PR-UPPER {
-    display: flex;
-    border: 10px solid white;
-    margin: auto;
-}
-
-/* Ruleset targeting the titles of the research statement box and team members box */
-.PR-UPPER h2, .PR-LOWER h2 {
-    color: white;
-}
-
-/* Ruleset targeting the image and research statement boxes */
-.IMG-LEFT, .STATEMENT, .IMG-RIGHT {
-    flex: 1;
-    background: rgb(145, 9, 12);
-}
-
-/* Ruleset targeting media in PR-UPPER */
-.IMG-LEFT, .IMG-RIGHT {
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-}
-
-.IMG-LEFT img, .IMG-RIGHT img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-/* Ruleset targeting the research statement in PR-UPPER */
-.STATEMENT {
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    color: white;
-}
-
-/* Ruleset targeting all images in PR-LOWER */
-.ONEONE, .ONE-TWO, .ONE-THREE, .TWOONE, .TWO-TWO, .TWO-THREE  {
-    display: inline-block;
-    background: rgb(145, 9, 12);
-    width: 250px;
-    height: 250px;
-}
-
-/* Ruleset targeting the title of the teaching sub-box */
-.INFO-SECTION h2, .INFO-SECTION p {
-    color: white;
-}
-
-.TEACH-LOWER>* {
-    border: 10px solid white;
-}
-
-.TEACH-LOWER {
-    display: flex;
+.DEI-RIGHT {
     justify-content: space-evenly;
+    align-items: center;
+    height: 95%;
 }
 
-/* Ruleset targeting the class notes box */
+.DEI-RIGHT>* {
+    flex: 1;
+    border: 5px solid black;
+    width: 80%;
+    height: 50px;
+}
+
+#TEACHING {
+    display: flex;
+    height:500px;
+    width:100%;
+}
+
+#TEACHING-CONTENT-DIVIDER {
+    background-color: white;
+    width: 5px;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.TEACHING-MAIN-LEFT {
+    height:100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TEACH-LEFT-TITLE {
+    font-size: 30px;
+    width: 100%;
+    text-decoration: underline;
+}
+
+.TEACH-STMT {
+    font-size: 22px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.TEACHING-MAIN-RIGHT {
+    flex: 1;
+    display: flex;
+}
+
 .CLASS-NOTES, .FUN-LINKS{
-    width: 250px;
-    height: 500px;
-    background: rgb(145, 9, 12);
-    color: white;
+    flex: 1;
 }
 
 .NOTES-CONTENT {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    height: 90%;
+    justify-content: space-evenly;
 }
 
-.NOTES-CONTENT>* {
-    flex: 1;
+.NOTES-CONTENT h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.NOTES-CONTENT a {
+    font-size: 20px;
 }
 
 .LINKS-CONTENT {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-
-.LINKS-CONTENT>* {
-    flex: 1;
-}
-
-/* Ruleset targeting the title of the DEI sub-box */
-#DEI h2, #DEI p {
-    color: white;
-}
-
-/* Ruleset targeting the related links box */
-.RELATED-LINKS {
-    display: flex;
     justify-content: space-evenly;
-    background: rgb(145, 9, 12);
-    border: 10px solid white;
+    height: 90%;
 }
 
-/* Ruleset targeting the columns of the teaching box */
-.COL-ONE, .COL-TWO {
-    width: 250px;
-    height: 250px;
-    background: rgb(145, 9, 12);
-    color: white;
-    display: flex;
-    flex-direction: column;
+.LINKS-CONTENT h3 {
+    font-size: 25px;
+    text-decoration: underline;
 }
 
-.COL-ONE-CONTENT {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.LINKS-CONTENT a {
+    font-size: 20px;
+}
+
+.ISR-BAN {
     width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
-
-.COL-ONE-CONTENT>* {
-    flex: 1;
-}
-
-/* Ruleset targeting the title of the ISR site box */
-.UPPER-ISR h1{
+    height: 200px;
+    position: relative;
+    text-align: center;
     color: white;
+}
+
+.ISR-BAN img {
+    height: 100%; 
+    width: 100%;
+    position: relative;
+    filter: brightness(75%);
+    object-fit: cover;
+}
+
+.CENTER-TEXT {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30px;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+}
+
+#ISR-BODY {
+    background-color: rgb(2, 43, 113);
+}
+
+#ISR-BODY h2 {
+    text-decoration: underline;
 }
 
 .UPPER-ISR p {
     color: white;
-    font-size: 20;
+    font-size: 20px;
 }
 
-/* Ruleset targeting the main portion of the ISR site */
 .LOWER-ISR {
     display: flex;
     border: 10px solid white;
     margin-bottom: 10px;
+    background: rgb(145, 9, 12);
 }
 
-/* Ruleset targeting all boxes of the ISR site */
 #THEORY, #OBSERVATION, #EXPERIMENT, #JUPYTER-NOTEBOOK, #SIMULATION {
     width: 750px;
     height: 250px;
@@ -253,14 +337,16 @@ body {
 #THEORY, #OBSERVATION, #EXPERIMENT {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 #TContent, #OContent, #EContent {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
+    overflow-y: auto;
 }
 
 #TContent>*, #OContent>*, #EContent>* {
@@ -288,6 +374,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
@@ -298,4 +385,67 @@ body {
 
 .EXTRA-ISR a{
     font-size: 50px;
+}
+
+#THEORY-BODY {
+    background-color: rgb(2, 43, 113);
+}
+
+#THEORY-MAIN h1{
+    font-size: 45px;
+    color: white;
+}
+
+.THEORY-LINKS {
+    font-size: 30px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.THEORY-LINKS>* {
+    flex: 1;
+}
+
+#OBSERV-BODY {
+    background-color: rgb(2, 43, 113);
+}
+
+#OBSERV-MAIN h1{
+    font-size: 45px;
+    color: white;
+}
+
+.OBSERV-LINKS {
+    font-size: 30px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.OBSERV-LINKS>* {
+    flex: 1;
+}
+
+#EXPERIM-BODY {
+    background-color: rgb(2, 43, 113);
+}
+
+#EXPERIM-MAIN h1{
+    font-size: 45px;
+    color: white;
+}
+
+.EXPERIM-LINKS {
+    font-size: 30px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.EXPERIM-LINKS>* {
+    flex: 1;
 }

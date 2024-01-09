@@ -3,159 +3,148 @@
 <!--file:///C:/Users/Brandon/Desktop/Fall%202023/GOODWIN%20WEBSITE/TEST1/index.html-->
 <!--file:///C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\index.html-->
 
+<head>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <style>
+    body {
+      font-family: "Montserrat";
+    }
+    </style>
+</head>
+
 <!--Header Section containing hyperlink to CSS stylesheet, navigation bar, and navigation links-->
     <head>
         <link href="app.css" rel="stylesheet"> <!--Link to CSS Style Sheet-->
-        <nav> <!--Nav element containing buttons which are links to different parts of the page-->
-
-                <div class = Button><a href = "#HOMEPAGE">Homepage</a></div>
-                <div class = Button><a href = "#PROJECTS-AND-RESEARCH-TEAM">Projects and Research Team</a></div>
-                <div class = Button><a href = "#TEACHING">Teaching</a></div>
-                <div class = Button><a href = "#DEI">Diversity-Equity-Inclusion</a></div>
-                <div class = Button><a href = "ISRSITE.html" target = _blank>NJIT Radar Collective</a></div>
-                <!--Five divs, each of the class Button that contain anchor element links to different parts of the page-->
-
-        </nav>
     </head>
 
 <!--Body Section containing Homepage, Projects and Research Team, Teaching, DEI, and ISR Sections-->
     <body>
 
+        <div id = "NAVIGATION">
+            <nav> <!--Nav element containing buttons which are links to different parts of the page-->
+
+                    <a href = "#PROJECTS-AND-RESEARCH-TEAM">Projects and Research Team</a>
+                    <a href = "#TEACHING">Teaching</a>
+                    <a href = "#DEI">Diversity-Equity-Inclusion</a>
+                    <a href = "ISRSITE.html" target = _blank>NJIT Radar Collective</a>
+                <!--Five divs, each of the class Button that contain anchor element links to different parts of the page-->
+
+            </nav>
+        </div>
+        
+        <div id = "DIVIDER">
+
+        </div>
+
         <div id = "HOMEPAGE"> <!--Homepage box-->
-
-            <h1>Lindsay Goodwin</h1> <!--Homepage title-->
-            <div class = "HP-LOWER"> <!--Lower Homepage box with image section, about me section, and contact section-->
-                <div class = "HP-IMAGE"> <!--Image box-->
-                    <img src="" alt="IMG">
-                </div>
-
-                <div class = "HP-ABME"> <!--About me box-->
-                <h2>About Me</h2>
-                    <p>This is where the about me statement will go after it is written. Right now it is only a placeholder field and this text is being used to measure how much space will be taken up.</p>
-                </div>
-
-                <div class = "HP-CONTACT"> <!--Contact box-->
-                <h2>Contact Information</h2>
-                    <div class = "CONTACT-CONTENT">
-                        <div class = Button><a href = "">LinkedIn</a></div>
-                        <div class = Button><a href = "">GitHub</a></div>
-                        <div class = Button><a href = "">Twitter</a></div>
-                        <div class = Button><a href = "">Instagram</a></div>
-                        <div class = Button><a href = "">YouTube</a></div>
-                        <!--Five divs, each of the class Button that contain links to social media-->
+                <div class = "HP-LEFT">
+                    <div class = "HP-LEFT-IMG">
+                        <img src="C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\goodwin img.jpg" alt="IMG">
                     </div>
+                    <div class = "HP-LEFT-INFO">
+                        <container class = "HP-LEFT-TITLES">
+                            <h2 id = "NAME">Lindsay V. Goodwin</h2>
+                            <h2 id = "TITLE">Assistant Professor</h2>
+                        </container>
+                        <a class = "LINKED-IN" href = "https://www.linkedin.com/in/lindsay-v-goodwin/" target = _blank>
+                            <img src = "https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png" alt = "IMG">
+                        </a>
+                    </div>
+                </div>
+
+                <div id = "HOMEPAGE-CONTENT-DIVIDER">
+
+                </div>
+
+                <div class = "HP-RIGHT">
+                    <div class = "HP-RIGHT-TITLE">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class = "HP-ABME-STMT">
+                        <p>My name is Lindsay Goodwin, and I am an Assistant Professor at the New Jersey Institute of Technology working in the Center for Solar-Terrestrial Research. Although I like to study a wide variety of topics within space physics, I am currently focusing most of my energy on magnetosphere-ionosphere coupling. This stated, I am also quite familiar with ionospheric plasma physics, plasma-neutral interactions, and radio physics. I am also a lecturer.</p>
+                    </div>
+                </div>
+        </div>
+
+        <div id = "PROJECTS-AND-RESEARCH-TEAM"> 
+            <div class = "P-AND-R-LEFT">
+                <div class = "PR-LEFT-TOP">
+                    <h1>Projects and Research Team</h1>
+                </div>
+                <div class = "PR-LEFT-BOT">
+                    <div class = "PR-RECH-STMT">
+
+                    </div>
+                </div>
+            </div>
+            <div class = "P-AND-R-RIGHT">
+                <div class = "P-AND-R-IMAGE">
+
                 </div>
             </div>
 
         </div>
 
-        <div id = "PROJECTS-AND-RESEARCH-TEAM"> <!--Projects and research box-->
-
-            <h1>Projects and Research Team</h1> <!--Projects and research title-->
-
-            <div class = "PR-UPPER"> <!--Upper PR box with left image section, statement section, and a right image section-->
-
-                <img class = "IMG-LEFT" src="" alt="IMG"> <!--Left image box-->
-
-                <div class = "STATEMENT"> <!--Center statement box-->
-                    <h2>Research Statement</h2>
-                        <p><p>This is where the research statement will go after it is written. Right now it is only a placeholder field and this text is being used to measure how much space will be taken up.</p></p>
+        <div id = "TEACHING"> 
+                <div class = "TEACHING-MAIN-LEFT">
+                    <div class = "TEACH-LEFT-TITLE">
+                        <h1>Teaching</h1>
+                    </div>
+                    <div class = "TEACH-STMT">
+                        <p>A course is a nature park, the students are park visitors, and the instructor is a well-trained guide. The guide's goal is to get everyone to a beautiful vista, while being mindful of the strengths and weaknesses of the visitors. Some of the visitors may want to climb steep cliffs, while others may just want to walk the well-worn paths. Similarly, educators instruct students, connecting them to their goals while navigating the barriers and the strengths/weaknesses of the students along the way. Accordingly, my teaching and mentoring goal is to create a learning environment that is driven by the needs of the students.</p>
+                    </div>
                 </div>
 
-                <img class = "IMG-RIGHT" src="" alt="IMG"> <!--Right image box-->
+                <div id = "TEACHING-CONTENT-DIVIDER">
 
-            </div>
-
-            <div class = "PR-LOWER"> <!--Lower PR box with rows containing images of team members-->
-
-                <h2>Team Members</h2>
-
-                    <div class = "row-one"> <!--Row one containing images-->
-                        <img class = "ONEONE" src="" alt="IMG">
-                        <img class = "ONE-TWO" src="" alt="IMG">
-                        <img class = "ONE-THREE" src="" alt="IMG">
+                </div>
+                
+                <div class = "TEACHING-MAIN-RIGHT">
+                    <div class = "CLASS-NOTES"> 
+                        <div class = "NOTES-CONTENT">
+                            <h3>Class Notes</h3>
+                            <div class = Button><a href = "">Chapter A</a></div>
+                            <div class = Button><a href = "">Chapter B</a></div>
+                            <div class = Button><a href = "">Chapter C</a></div>
+                            <div class = Button><a href = "">Chapter D</a></div>
+                            <div class = Button><a href = "">Chapter E</a></div>
+                        </div>
                     </div>
-
-                    <div class = "row-two"> <!--Row two containing images-->
-                        <img class = "TWOONE" src="" alt="IMG">
-                        <img class = "TWO-TWO" src="" alt="IMG">
-                        <img class = "TWO-THREE" src="" alt="IMG">
+                    <div class = "FUN-LINKS"> 
+                        <div class = "LINKS-CONTENT">
+                            <h3>Fun Links</h3>
+                            <div class = Button><a href = "">Youtube Link A</a></div>
+                            <div class = Button><a href = "">Youtube Link B</a></div>
+                            <div class = Button><a href = "">Interesting Article A</a></div>
+                            <div class = Button><a href = "">Interesting Article B</a></div>
+                            <div class = Button><a href = "">Interesting Article C</a></div>
+                        </div>
                     </div>
+                </div>
+        </div>
 
+        <div id = "DEI">
+            <div class = "DEI-LEFT">
+                <h1>Diversity Equity Inclusion</h1>
+                <container class = "DEI-STMT">
+
+                </container>
             </div>
+            <div class = "DEI-RIGHT">
+                <div class = "RIGHT-CONTENT-ONE"></div>
+                <div class = "RIGHT-CONTENT-TWO"></div>
+                <div class = "RIGHT-CONTENT-THREE"></div>
+            </div> 
 
         </div>
 
-        <div id = "TEACHING"> <!--Teaching box-->
-
-            <h1>Teaching</h1> <!--Teaching title-->
-
-            <div class = "INFO-SECTION"> <!--Info section containing general info title and a paragraph-->
-                <h2>General Info</h2>
-                <p>This is where the general info for the teaching section will go after it is written. Right now it is only a placeholder field and this text is being used to measure how much space will be taken up.</p>
-            </div>
-
-            <div class = TEACH-LOWER> <!--Lower teaching box containing a classs notes section with links to notes and a fun links section with a link to anything notable-->
-
-                <div class = "CLASS-NOTES"> <!--Class notes section containing buttons which are also anchor links-->
-                    <h3>Class Notes</h3>
-                    <div class = "NOTES-CONTENT">
-                        <div class = Button><a href = "">Chapter A</a></div>
-                        <div class = Button><a href = "">Chapter B</a></div>
-                        <div class = Button><a href = "">Chapter C</a></div>
-                        <div class = Button><a href = "">Chapter D</a></div>
-                        <div class = Button><a href = "">Chapter E</a></div>
-                    </div>
-                </div>
-                <div class = "FUN-LINKS"> <!--Fun links section containing buttons which are also anchor links-->
-                    <h3>Fun Links!</h3>
-                    <div class = "LINKS-CONTENT">
-                        <div class = Button><a href = "">Youtube Link A</a></div>
-                        <div class = Button><a href = "">Youtube Link B</a></div>
-                        <div class = Button><a href = "">Interesting Article A</a></div>
-                        <div class = Button><a href = "">Interesting Article B</a></div>
-                        <div class = Button><a href = "">Interesting Article C</a></div>
-                    </div>
-                </div>
-
-            </div>
-
-            </div>
-
-        </div>
-
-        <div id = "DEI"> <!--DEI box-->
-
-            <h1>Diversity-Equity-Inclusion</h1> <!--DEI title-->
-
-            <div class = "DEI-STATEMENT"> <!--DEI statement section containing DEI statement and a paragraph-->
-                <h2>DEI STATEMENT</h2>
-                    <p>This is where the DEI statement will go after it is written. Right now it is only a placeholder field and this text is being used to measure how much space will be taken up.</p>
-            </div>
-            
-            <h2>Related Links</h2> <!--Related links section, containing a row for links and a row for related images-->
-            <div class = "RELATED-LINKS">
-                <div class = "COL-ONE"> <!--Column One section containing links-->
-                    <h3>LINKS</h3>
-                    <div class = "COL-ONE-CONTENT">
-                        <div class = Button><a href = "">LinkA</a></div>
-                        <div class = Button><a href = "">LinkB</a></div>
-                        <div class = Button><a href = "">LinkC</a></div>
-                        <div class = Button><a href = "">LinkD</a></div>
-                        <div class = Button><a href = "">LinkE</a></div>
-                    </div>
-                </div>
-                <div class = "COL-TWO"> <!--Column Two section containing related images-->
-                    <h3>IMAGES</h3>
-                    
-                </div>
-            </div>
+        <div id = "DIVIDER">
 
         </div>
 
         <div id = "ISR-SITE"> <!--ISR box-->
 
-            <a href = "ISRSITE.html" target = _blank><h2>NJIT Radar Collective</h2></a> <!--Anchor link to ISR site page-->
+            <a href = "ISRSITE.html" target = _blank><h2>New Jersey Institute of Technology Radar Collective</h2></a> <!--Anchor link to ISR site page-->
         
         </div>
 
