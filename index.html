@@ -1,157 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-    <head>
-        <meta charset="UTF=8" />
-        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
-        <link rel="stylesheet" href="style.css">
-        <script defer src="node.js"></script>
-    </head>
+<!--Header section containing link to required CSS, default window settings, link to imported CSS fonts, and internal CSS section-->
+<head>
+    <link href="app.css" rel="stylesheet"> <!--Link to CSS Style Sheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Sets the viewport to match the device, with a default zoom of 100%-->
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'> <!--Link to CSS Font Sheet, imports the Montserrat font-->
+    <style> /*Internal CSS*/
+    body { /*Sets the default font for the entire page*/
+      font-family: "Montserrat";
+    }
+    </style>
+</head>
 
+<!--Body Section containing About Me, Projects and Research Team, Teaching, DEI, and ISR Sections-->
     <body>
 
-        <header class = "main-header">
-            <div class = "container">
-                <nav class = "main-navigation">
-                    <ul role = "list" class = "nav-list">
-                        <li><a href="#PROJECTS-AND-RESEARCH-TEAM"></a>Projects and Research Team</li>
-                        <li><a href="#TEACHING"></a>Teaching</li>
-                        <li><a href="#DEI"></a>Diversity-Equity-Inclusion</li>
-                        <li><a href="ISRTEST.html"></a>NJIT Radar Collective</li>
-                    </ul>
-                </nav>
+        <div id = "NAVIGATION"> <!--Navigation Section at top of page-->
+            <nav> <!--Nav element containing buttons which are links to different parts of the page-->
+                    <!--Four anchor links leading to page sections-->
+                    <a href = "#PROJECTS-AND-RESEARCH-TEAM">Projects and Research Team</a>
+                    <a href = "#TEACHING">Teaching</a>
+                    <a href = "#DEI">Diversity-Equity-Inclusion</a>
+                    <a href = "ISRSITE.html" target = _blank>NJIT Radar Collective</a>
+            </nav>
+        </div>
+        
+        <div id = "DIVIDER"> <!--Horizontal Divider between Nav section and About Me section-->
+
+        </div>
+
+        <div id = "HOMEPAGE"> <!--Homepage/About Me Section-->
+                <div class = "HP-LEFT"> <!--Left box of AbMe Section-->
+                    <div class = "HP-LEFT-IMG"> <!--Top left box to contain image -->
+                        <img src="C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\goodwin img.jpg" alt="AbMe IMG"> <!--Img element containing image file and alt text-->
+                    </div>
+                    <div class = "HP-LEFT-INFO"> <!--Bottom left box to contain details-->
+                        <container class = "HP-LEFT-TITLES"> <!--Box to contain titles-->
+                            <h2 id = "NAME">Lindsay V. Goodwin</h2>
+                            <h2 id = "TITLE">Assistant Professor</h2>
+                        </container>
+                        <a class = "LINKED-IN" href = "https://www.linkedin.com/in/lindsay-v-goodwin/" target = _blank> <!--Anchor linking to social media-->
+                            <img src = "https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png" alt = "LinkedIn IMG"> <!--Image contained in anchor class that takes up entire class and displays Alt text-->
+                        </a>
+                    </div>
+                </div>
+
+                <div id = "HOMEPAGE-CONTENT-DIVIDER"> <!--Vertical Divider between Left and Right AbMe sections-->
+
+                </div>
+
+                <div class = "HP-RIGHT"> <!--Right box of AbMe Section-->
+                    <div class = "HP-RIGHT-TITLE"> <!--Top right box containing two images and a heading-->
+                        <div id = "RIGHT-TITLE-PIC-LEFT"> <!--Box containing image and alt text-->
+                            <img src="C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\Solar_eclipse.gif" alt="Right AbMe IMG">
+                        </div>
+                        <h1>About Me</h1> <!--Centered heading-->
+                        <div id = "RIGHT-TITLE-PIC-RIGHT"> <!--Box containing image and alt text-->
+                            <img src="C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\cometimg.jpg" alt="Left AbMe IMG">  
+                        </div> 
+                    </div>
+                    <div class = "HP-ABME-STMT"> <!--Box containing About Me summary-->
+                        <p>My name is Lindsay Goodwin, and I am an Assistant Professor at the New Jersey Institute of Technology working in the Center for Solar-Terrestrial Research. Although I like to study a wide variety of topics within space physics, I am currently focusing most of my energy on magnetosphere-ionosphere coupling. This stated, I am also quite familiar with ionospheric plasma physics, plasma-neutral interactions, and radio physics. I am also a lecturer.</p>
+                    </div>
+                </div>
+        </div>
+
+        <div id = "PROJECTS-AND-RESEARCH-TEAM"> <!--ProjandRes Section-->
+            <div class = "P-AND-R-LEFT"> <!--Box containing top and bottom boxes for content-->
+                <div class = "PR-LEFT-TOP"> <!--Top left box to contain title-->
+                    <h1>Projects and Research Team</h1>
+                </div>
+                <div class = "PR-LEFT-BOT"> <!--Bottom left box to contain content-->
+                    <div class="PR-RECH-MEM"> <!--Box to contain boxes of images and titles for each research team member-->
+                        <div class="rectangle"> <!--Box containing image, alt text, and subtitle-->
+                            <img src="image1.jpg" alt="Image 1">
+                            <div class="subtitle">Subtitle 1</div>
+                        </div>
+                        <div class="rectangle"> <!--Box containing image, alt text, and subtitle-->
+                            <img src="image2.jpg" alt="Image 2">
+                            <div class="subtitle">Subtitle 2</div>
+                        </div>
+                        <div class="rectangle"> <!--Box containing image, alt text, and subtitle-->
+                            <img src="image3.jpg" alt="Image 3">
+                            <div class="subtitle">Subtitle 3</div>
+                        </div>
+                        <div class="rectangle"> <!--Box containing image, alt text, and subtitle-->
+                            <img src="image4.jpg" alt="Image 4">
+                            <div class="subtitle">Subtitle 4</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
 
-        <main>
+            <div id = "PR-CONTENT-DIVIDER"> <!--Vertical divider between left and right ProjandRes sections-->
 
-            <section class = "padding-block-900">
-                <div class="container">
-                    <div class="columns">
-                        <div>
-                            <img src = "C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\goodwin img.jpg" alt = "img">
-                            <h2 class="fs-second-heading fw-semi-bold">
-                                Lindsay V. Goodwin
-                            </h2>
-                            <h3 class="fs-700 fw-semi-bold">
-                                Assistant Professor
-                            </h3>
-                            <a aria-label = "linked-in" href="#"></a>
+            </div>
+
+            <div class = "P-AND-R-RIGHT"> <!--Box tp hold content on right side of divider-->
+                <div class = "P-AND-R-IMAGE"> <!--Box contiaining the actual content (to be adjusted later to hold research statement, not images)-->
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id = "TEACHING"> <!--Teaching Section-->
+                <div class = "TEACHING-MAIN-LEFT"> <!--Left box to hold content-->
+                    <div class = "TEACH-LEFT-TITLE"> <!--Box containing title-->
+                        <h1>Teaching</h1>
+                    </div>
+                    <div class = "TEACH-STMT"> <!--Box containing statement-->
+                        <p>A course is a nature park, the students are park visitors, and the instructor is a well-trained guide. The guide's goal is to get everyone to a beautiful vista, while being mindful of the strengths and weaknesses of the visitors. Some of the visitors may want to climb steep cliffs, while others may just want to walk the well-worn paths. Similarly, educators instruct students, connecting them to their goals while navigating the barriers and the strengths/weaknesses of the students along the way. Accordingly, my teaching and mentoring goal is to create a learning environment that is driven by the needs of the students.</p>
+                    </div>
+                </div>
+
+                <div id = "TEACHING-CONTENT-DIVIDER"> <!--Vertical divider between left and right teaching sections-->
+
+                </div>
+                
+                <div class = "TEACHING-MAIN-RIGHT"> <!--Right box to hold content-->
+                    <div class = "CLASS-NOTES"> <!--Box to hold the notes content-->
+                        <div class = "NOTES-CONTENT"> <!--Box containing notes content-->
+                            <!--Header and button boxes containing text that anchor link to destination-->
+                            <h3>Course Material</h3> 
+                            <div class = Button><a href = "">Chapter A</a></div>
+                            <div class = Button><a href = "">Chapter B</a></div>
+                            <div class = Button><a href = "">Chapter C</a></div>
+                            <div class = Button><a href = "">Chapter D</a></div>
+                            <div class = Button><a href = "">Chapter E</a></div>
                         </div>
-                        <div>
-                            <h1 class="fs-main-heading fw-bold">
-                                About Me
-                            </h1>
-                            <p class="fs-600 fw-regular">
-                                My name is Lindsay Goodwin, and I am an Assistant Professor at the New Jersey Institute of Technology working in the Center for Solar-Terrestrial Research. Although I like to study a wide variety of topics within space physics, I am currently focusing most of my energy on magnetosphere-ionosphere coupling. This stated, I am also quite familiar with ionospheric plasma physics, plasma-neutral interactions, and radio physics. I am also a lecturer.
-                            </p>
+                    </div>
+                    <div class = "FUN-LINKS"> <!--Box to hold the links content-->
+                        <div class = "LINKS-CONTENT"> <!--Box containing the links content-->
+                            <!--Header and button boxes containing text that anchor link to destination-->
+                            <h3>Fun Links</h3>
+                            <div class = Button><a href = "">Youtube Link A</a></div>
+                            <div class = Button><a href = "">Youtube Link B</a></div>
+                            <div class = Button><a href = "">Interesting Article A</a></div>
+                            <div class = Button><a href = "">Interesting Article B</a></div>
+                            <div class = Button><a href = "">Interesting Article C</a></div>
                         </div>
                     </div>
                 </div>
-            </section>
+        </div>
 
-            <section class = "padding-block-900" id = "PROJECTS-AND-RESEARCH-TEAM">
-                <div class="container">
-                    <div class="columns">
-                        <div class = "column">
-                            <h1 class="fs-main-heading fw-bold">
-                                Projects and Research Team
-                            </h1>
-                            <p class="fs-body fw-regular">
-                                Research Statement
-                            </p>
-                        </div>
-                        <div>
-                            <div class="horizontal-carousel-container">
-                                <div class="horizontal-carousel-track">
-                                  <div class="horizontal-carousel-slide">
-                                    <img src="C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\goodwin img.jpg" alt="Image 1">
-                                    <p>TEST TITLE</p>
-                                  </div>
-                                  <div class="horizontal-carousel-slide">
-                                    <img src="C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\goodwin img.jpg" alt="Image 2">
-                                    <p>TEST TITLE</p>
-                                  </div>
-                                  <div class="horizontal-carousel-slide">
-                                    <img src="C:\Users\stran\OneDrive\Desktop\GoodwinVSCode\goodwin img.jpg" alt="Image 3">
-                                    <p>TEST TITLE</p>
-                                  </div>
-                                </div>
-                            </div>                         
-                        </div>
-                    </div>
+        <!--ALL of DEI section may need to heavily edited or removed entirely, TBD!-->
+        <div id = "DEI"> <!--DEI Section-->
+            <div class = "DEI-LEFT"> <!--Left box to hold header and statement content-->
+                <div id = "DEI-LEFT-TOP"> <!--Box containing header-->
+                    <h1>Diversity Equity Inclusion</h1>
                 </div>
-            </section>
+                <container class = "DEI-STMT"> <!--Box containing statement-->
 
-            <section class = "padding-block-900" id = "TEACHING">
-                <div class="container">
-                    <div class="columns">
-                        <div>
-                            <h1 class="fs-main-heading fw-bold">
-                                Teaching
-                            </h1>
-                            <p class="fs-600 fw-regular">
-                                A course is a nature park, the students are park visitors, and the instructor is a well-trained guide. The guide's goal is to get everyone to a beautiful vista, while being mindful of the strengths and weaknesses of the visitors. Some of the visitors may want to climb steep cliffs, while others may just want to walk the well-worn paths. Similarly, educators instruct students, connecting them to their goals while navigating the barriers and the strengths/weaknesses of the students along the way. Accordingly, my teaching and mentoring goal is to create a learning environment that is driven by the needs of the students.
-                            </p>
-                        </div>
-                        <div>
-                            <div class = "even-columns">
-                                <div>
-                                    <h2 class="fs-second-heading fw-semi-bold">
-                                        Class Notes
-                                    </h2>
-                                    <ul role = "list" class = "class-notes">
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 class="fs-second-heading fw-semi-bold">
-                                        Links
-                                    </h2>
-                                    <ul role = "list" class = "links">
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </container>
+            </div>
 
-            <section class = "padding-block-900" id = "DEI">
-                <div class="container">
-                    <div class="columns">
-                        <div>
-                            <h1 class="fs-main-heading fw-bold">
-                               Diversity-Equity-Inclusion
-                            </h1>
-                            <p class="fs-body fw-regular">
-                                DEI Statement
-                            </p>
-                        </div>
-                        <div>
+            <div id = "DEI-CONTENT-DIVIDER"> <!--Vertical divider between left and right DEI sections-->
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
 
-            <footer class = "main-footer">
-                <section class = "padding-block-900">
-                    <div>
-                        <a href = "ISRTEST.html" target = _blank><h2>New Jersey Institute of Technology Radar Collective</h2></a>
-                    </div>
-                </section>
-            </footer>
+            <div class = "DEI-RIGHT"> <!--Right box to hold additional DEI content-->
+                <div class = "RIGHT-CONTENT-ONE"></div>
+                <div class = "RIGHT-CONTENT-TWO"></div>
+                <div class = "RIGHT-CONTENT-THREE"></div>
+            </div> 
 
-        </main>
+        </div>
+
+        <div id = "DIVIDER"> <!--Horizontal Divider between DEI section and ISR section-->
+
+        </div>
+
+        <div id = "ISR-SITE"> <!--ISR Section-->
+
+            <a href = "ISRSITE.html" target = _blank><h2>New Jersey Institute of Technology Radar Collective</h2></a> <!--Anchor link to ISR site page-->
+        
+        </div>
+
     </body>
 </html>
