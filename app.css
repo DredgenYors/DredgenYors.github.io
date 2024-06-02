@@ -51,6 +51,8 @@ nav {
     height:500px;
     width:100%;
     justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #HOMEPAGE-CONTENT-DIVIDER {
@@ -145,6 +147,8 @@ nav {
     height:500px;
     width:100%;
     justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .P-AND-R-LEFT, .P-AND-R-RIGHT {
@@ -202,16 +206,15 @@ nav {
     display: flex;
     justify-content: space-around; /* Align horizontally */
     align-items: center;
-    flex: 1;
     border: solid black 5px;
-    width: 75%;
-    height: 200px;
+    width: 85%;
+    height: 275px;
 }
 
 .rectangle {
     flex: 1 1 200px; 
     max-width: 200px; 
-    height: 300px; 
+    height: 200px; 
     background-color: #f0f0f0; 
     border: 1px solid #000; 
     display: flex;
@@ -242,6 +245,8 @@ nav {
     height:500px;
     width:100%;
     justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .DEI-LEFT, .DEI-RIGHT {
@@ -291,6 +296,8 @@ nav {
     height:500px;
     width:100%;
     justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #TEACHING-CONTENT-DIVIDER {
